@@ -1,40 +1,41 @@
-import { Plugin } from "obsidian";
+import { Plugin, WorkspaceLeaf } from "obsidian";
+import { CopilotView, VIEW_TYPE_EXAMPLE } from "./copilot_view";
 
-export default class ExamplePlugin extends Plugin {
-	statusBarElement: HTMLSpanElement;
 
-	onload() {
-		this.statusBarElement = this.addStatusBarItem().createEl("span");
+export default class Main extends Plugin {
+	async onload() {
 
-		this.readActiveFileAndUpdateLineCount();
+		this.registerView(
+			VIEW_TYPE_EXAMPLE,
+			(leaf) => new CopilotView(leaf)
+		);
 
-		this.app.workspace.on("editor-change", (editor) => {
-			const content = editor.getDoc().getValue();
-			this.updateLineCount(content);
+		this.addRibbonIcon("bot", "Obsidian Copilot", () => {
+			this.activateView();
 		});
 
-		this.app.workspace.on("active-leaf-change", () => {
-			this.readActiveFileAndUpdateLineCount();
-		});
+	}
+	async onunload() {
 	}
 
-	onunload() {
-		this.statusBarElement.remove();
-	}
+	async activateView() {
+		const { workspace } = this.app;
 
-	private async readActiveFileAndUpdateLineCount() {
-		const file = this.app.workspace.getActiveFile();
-		if (file) {
-			const content = await this.app.vault.read(file);
-			this.updateLineCount(content);
+		let leaf: WorkspaceLeaf | null = null;
+		const leaves = workspace.getLeavesOfType(VIEW_TYPE_EXAMPLE);
+
+		if (leaves.length > 0) {
+			// A leaf with our view already exists, use that
+			leaf = leaves[0];
 		} else {
-			this.updateLineCount(undefined);
+			// Our view could not be found in the workspace, create a new leaf
+			// in the right sidebar for it
+			leaf = workspace.getRightLeaf(false);
+			await leaf.setViewState({ type: VIEW_TYPE_EXAMPLE, active: true });
 		}
-	}
 
-	private updateLineCount(fileContent?: string) {
-		const count = fileContent ? fileContent.split(/\r\n|\r|\n/).length : 0;
-		const linesWord = count === 1 ? "line" : "lines";
-		this.statusBarElement.textContent = `${count} ${linesWord}`;
+		// "Reveal" the leaf in case it is in a collapsed sidebar
+		workspace.revealLeaf(leaf);
 	}
 }
+
