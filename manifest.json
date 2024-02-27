@@ -1,9 +1,9 @@
 {
-	"id": "obsidian-copilot",
+	"id": "ob-copilot",
 	"name": "Obsidian Copilot",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Integrate Bing Copilot into Obsidian",
+	"description": "Integrate Microsoft Copilot into Obsidian",
 	"author": "Sharma Kartik",
 	"authorUrl": "https://github.com/KTK27YT",
 	"fundingUrl": "https://github.com/KTK27YT",
