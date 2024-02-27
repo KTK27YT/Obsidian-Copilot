@@ -1,11 +1,11 @@
 ![](Banner.png)
 
-Is it me or all the Ai plugins on Obsidian require you to be in a region where GPT works? And you **need** an API Key? Try Obsidian Copilot -- A simple obsidian extension that just works out of the box. No setup, No region restrictions, and best of all GPT-4 and Dall-E is free to use. 
+Is it me or all the AI plugins on Obsidian require you to be in a region where GPT works? And you **need** an API Key? Try Obsidian Copilot -- A simple obsidian extension that just works out of the box. No setup, No region restrictions, and best of all GPT-4 and Dall-E is free to use. 
 
 ## Usage
 Once enabled in Obsidian from the community plugins tab.
 
-Click the robot icon  ![](data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIyNCIgaGVpZ2h0PSIyNCIgdmlld0JveD0iMCAwIDI0IDI0IiBmaWxsPSJub25lIiBzdHJva2U9ImN1cnJlbnRDb2xvciIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiIHN0cm9rZS1saW5lam9pbj0icm91bmQiIGNsYXNzPSJsdWNpZGUgbHVjaWRlLWJvdCI+PHBhdGggZD0iTTEyIDhWNEg4Ii8+PHJlY3Qgd2lkdGg9IjE2IiBoZWlnaHQ9IjEyIiB4PSI0IiB5PSI4IiByeD0iMiIvPjxwYXRoIGQ9Ik0yIDE0aDIiLz48cGF0aCBkPSJNMjAgMTRoMiIvPjxwYXRoIGQ9Ik0xNSAxM3YyIi8+PHBhdGggZD0iTTkgMTN2MiIvPjwvc3ZnPg==)  in the left sidebar to open the Copilot panel.
+Click the robot icon  ![](robot.svg)  in the left sidebar to open the Copilot panel.
 
 Select your conversation style
 
@@ -20,7 +20,7 @@ For more details refer to [Microsoft Learn Page](https://learn.microsoft.com/en-
 
 Alternatively,
 
-1. Download the latest release from the [Releases]() page
+1. Download the latest release from the [Releases](https://github.com/KTK27YT/Obsidian-Copilot/releases) page
 2. go to your vault folder, and create a folder named `plugins` if it doesn't exist
 3. Unzip the downloaded file into that directly
 4. Enable community plugins in Obsidian and enable `Obsidian Copilot` from the list of Installed plugins
@@ -31,6 +31,9 @@ Alternatively,
 3. Run `npm run dev` to start the development environment
 
 ## Contributing :sparkles:
+
+As I am a novice developer, I appreciate any help I can get. If you want to contribute here is how to do it. Thank you!
+
 1. Fork it (https://github.com/KTK27YT/Obsidian-Copilot/fork)
 2. Create your feature branch (`git checkout -b feature/CoolNewFeature`)
 3. Commit your changes (`git commit -am 'Add some CoolNewFeature'`)
