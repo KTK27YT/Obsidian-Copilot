@@ -1,6 +1,6 @@
 {
 	"id": "ob-copilot",
-	"name": "Obsidian Copilot",
+	"name": "Cobalt Copilot",
 	"version": "2.0.0",
 	"minAppVersion": "0.15.0",
 	"description": "Integrate Microsoft Copilot into Obsidian",
