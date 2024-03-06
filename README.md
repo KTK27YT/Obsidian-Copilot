@@ -16,7 +16,7 @@ For more details refer to [Microsoft Learn Page](https://learn.microsoft.com/en-
 
 
 ## Installation  
-1. Open Obsidian and go to `Settings` -> `Community plugins` -> `Browse` and search for `Obsidian Copilot`. (**Pending approval**)
+1. Open Obsidian and go to `Settings` -> `Community plugins` -> `Browse` and search for `InteliChat`. (**Pending approval**)
 
 Alternatively,
 
