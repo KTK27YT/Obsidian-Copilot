@@ -10,7 +10,7 @@ export default class Main extends Plugin {
 			(leaf) => new CopilotView(leaf)
 		);
 
-		this.addRibbonIcon("bot", "Obsidian Copilot", () => {
+		this.addRibbonIcon("bot", "InteliChat", () => {
 			this.activateView();
 		});
 

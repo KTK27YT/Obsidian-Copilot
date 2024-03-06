@@ -1,11 +1,10 @@
 {
-	"id": "ob-copilot",
-	"name": "Cobalt Copilot",
+	"id": "int-copilot",
+	"name": "InteliChat",
 	"version": "2.0.0",
 	"minAppVersion": "0.15.0",
-	"description": "Integrate Microsoft Copilot into Obsidian",
+	"description": "Integrates Microsoft Copilot",
 	"author": "Sharma Kartik",
 	"authorUrl": "https://github.com/KTK27YT",
-	"fundingUrl": "https://github.com/KTK27YT",
 	"isDesktopOnly": false
 }

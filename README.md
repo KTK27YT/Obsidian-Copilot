@@ -25,6 +25,12 @@ Alternatively,
 3. Unzip the downloaded file into that directly
 4. Enable community plugins in Obsidian and enable `Obsidian Copilot` from the list of Installed plugins
 
+## Why is it called InteliChat?
+It was called this because you are **chatting** with an **intelligent** AI. 
+
+*Originally* it was called Obsidian Copilot, however due to copyright reasons, it had to be changed. 
+
+
 ## Development 
 1. Clone the repository
 2. Run `npm install` to install the dependencies

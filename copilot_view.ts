@@ -15,7 +15,7 @@ export class CopilotView extends ItemView {
     }
 
     getDisplayText() {
-        return "Obsidian Copilot";
+        return "InteliChat";
     }
 
     async onOpen() {
