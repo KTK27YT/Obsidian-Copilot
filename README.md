@@ -23,7 +23,7 @@ Alternatively,
 1. Download the latest release from the [Releases](https://github.com/KTK27YT/Obsidian-Copilot/releases) page
 2. go to your vault folder, and create a folder named `plugins` if it doesn't exist
 3. Unzip the downloaded file into that directly
-4. Enable community plugins in Obsidian and enable `Obsidian Copilot` from the list of Installed plugins
+4. Enable community plugins in Obsidian and enable `InteliChat` from the list of Installed plugins
 
 ## Why is it called InteliChat?
 It was called this because you are **chatting** with an **intelligent** AI. 
